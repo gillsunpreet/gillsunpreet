@@ -1,0 +1,2 @@
+1. Provided a dataset of cancer patients with different type of parameters.
+2. Based on these parameters my AI model will tell whether the tumor is malignant or benign.
