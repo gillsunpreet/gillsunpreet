@@ -1,0 +1,137 @@
+#include <Encoder.h>
+
+// Pins for the rotary encoder
+#define ENCODER_CLK 3
+#define ENCODER_DT 2
+#define ENCODER_SW 4  // Button pin for the rotary encoder
+
+// LED pins for different genres
+#define LED1 9  // Rock
+#define LED2 10 // Dance/EDM
+#define LED3 11 // Pop
+#define LED4 12 // Hip-Hop/Rap/R&B
+
+Encoder myEncoder(ENCODER_CLK, ENCODER_DT);  // Initialize the encoder
+
+long lastEncoderPos = 0;  // Track the last known position
+int currentPos = 0;       // Current position mapped to 0-360
+const int stepsPerRotation = 80;  // 80 steps for one full 360-degree rotation
+const int maxPosition = 360;      // Full rotation count
+bool buttonPressed = false;       // Flag to detect button press
+int currentDecade = 0;            // Variable to store current decade
+
+void setup() {
+  Serial.begin(9600);  // Start the Serial Monitor for communication
+  pinMode(ENCODER_SW, INPUT_PULLUP);  // Set encoder button as input with pull-up resistor
+
+  // Set LED pins as output
+  pinMode(LED1, OUTPUT);
+  pinMode(LED2, OUTPUT);
+  pinMode(LED3, OUTPUT);
+  pinMode(LED4, OUTPUT);
+}
+
+void loop() {
+  long newPos = myEncoder.read();  // Read the current encoder position
+
+  // Check if the encoder position has changed
+  if (newPos != lastEncoderPos) {
+    // Calculate the step change
+    long stepChange = newPos - lastEncoderPos;
+
+    // Update current position and scale it to 0-360
+    currentPos += (stepChange * maxPosition) / stepsPerRotation;
+
+    // Reset the position to 0 if it exceeds 360
+    if (currentPos >= maxPosition) {
+      currentPos = 0;
+    }
+    // Reset to 360 if it goes below 0
+    else if (currentPos < 0) {
+      currentPos = maxPosition;
+    }
+
+    // Map the current position to a decade and set LED intensities
+    if (currentPos >= 0 && currentPos < 90) {
+      currentDecade = 0;  // 1980s
+      setLEDIntensity(0);  
+    } else if (currentPos >= 90 && currentPos < 180) {
+      currentDecade = 1;  // 1990s
+      setLEDIntensity(1);
+    } else if (currentPos >= 180 && currentPos < 270) {
+      currentDecade = 2;  // 2000s
+      setLEDIntensity(2);
+    } else if (currentPos >= 270 && currentPos < 360) {
+      currentDecade = 3;  // 2010s
+      setLEDIntensity(3);
+    }
+
+    // Update the last known encoder position
+    lastEncoderPos = newPos;
+
+    // Print the current position for debugging
+    Serial.print("Mapped position: ");
+    Serial.println(currentPos);
+  }
+
+  // Check if the button is pressed
+  if (digitalRead(ENCODER_SW) == LOW && !buttonPressed) {
+    buttonPressed = true;  // Set flag to prevent multiple triggers
+
+    // Send the current decade only when the button is pressed
+    if (currentDecade == 0) {
+      Serial.println("Play 1980s");
+    } else if (currentDecade == 1) {
+      Serial.println("Play 1990s");
+    } else if (currentDecade == 2) {
+      Serial.println("Play 2000s");
+    } else if (currentDecade == 3) {
+      Serial.println("Play 2010s");
+    }
+  } else if (digitalRead(ENCODER_SW) == HIGH) {
+    buttonPressed = false;  // Reset flag when button is released
+  }
+
+  delay(100);  // Small delay for readability
+}
+
+// Set LED intensities based on the decade
+void setLEDIntensity(int decade) {
+  switch (decade) {
+    case 0:  // 1980s: Rock, Dance/EDM, Pop, Hip-Hop/Rap/R&B
+      analogWrite(LED1, 255);  // Rock (Highest)
+      analogWrite(LED2, 35);  // Dance/EDM
+      analogWrite(LED3, 4);   // Pop
+      analogWrite(LED4, 0);    // Hip-Hop/Rap/R&B (Lowest, off)
+      break;
+
+    case 1:  // 1990s: Pop, Rock, Hip-Hop/Rap/R&B, Dance/EDM
+      analogWrite(LED3, 255);  // Pop (Highest)
+      analogWrite(LED1, 40);  // Rock
+      analogWrite(LED4, 4);   // Hip-Hop/Rap/R&B
+      analogWrite(LED2, 0);    // Dance/EDM (Lowest, off)
+      break;
+
+    case 2:  // 2000s: Pop, Hip-Hop/Rap/R&B, Rock, Dance/EDM
+      analogWrite(LED3, 255);  // Pop (Highest)
+      analogWrite(LED4, 40);  // Hip-Hop/Rap/R&B
+      analogWrite(LED1, 4);   // Rock
+      analogWrite(LED2, 0);    // Dance/EDM (Lowest, off)
+      break;
+
+    case 3:  // 2010s: Pop, Hip-Hop/Rap/R&B, Dance/EDM, Rock
+      analogWrite(LED3, 255);  // Pop (Highest)
+      analogWrite(LED4, 40);  // Hip-Hop/Rap/R&B
+      analogWrite(LED2, 4);   // Dance/EDM
+      analogWrite(LED1, 0);    // Rock (Lowest, off)
+      break;
+
+    default:
+      // If something goes wrong, turn off all LEDs
+      analogWrite(LED1, 0);
+      analogWrite(LED2, 0);
+      analogWrite(LED3, 0);
+      analogWrite(LED4, 0);
+      break;
+  }
+}
