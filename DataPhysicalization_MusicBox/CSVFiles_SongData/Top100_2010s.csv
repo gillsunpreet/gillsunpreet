@@ -1,0 +1,101 @@
+Rank,Title,Artist,ReleaseDate,Genre,YoutubeViewCount ,Duration,BPM
+1,Uptown Funk!,Mark Ronson Featuring Bruno Mars,01/17/2015,"Funk, Pop",5.3B,04:31,115
+2,Party Rock Anthem,LMFAO Featuring Lauren Bennett & GoonRock,07/16/2011,"Dance-Pop, Electro House",2.4B,06:16,130
+3,Shape Of You,Ed Sheeran,01/28/2017,Pop,6.3B,04:24,96
+4,Closer,The Chainsmokers Featuring Halsey,09/03/2016,"EDM, Pop",3.1B,04:22,95
+5,Girls Like You,Maroon 5 Featuring Cardi B,09/29/2018,"Pop, Hip-Hop",3.6B,04:31,125
+6,We Found Love,Rihanna Featuring Calvin Harris,11/12/2011,"Dance-Pop, Electro House",1.1B,04:36,128
+7,Old Town Road,Lil Nas X Featuring Billy Ray Cyrus,04/13/2019,"Country Rap, Hip-Hop",1.3B,02:38,136
+8,Somebody That I Used To Know,Gotye Featuring Kimbra,04/28/2012,Indie Pop,2.3B,04:04,129
+9,Despacito,Luis Fonsi & Daddy Yankee Featuring Justin Bieber,05/27/2017,"Reggaeton, Latin Pop",8.5B,04:42,89
+10,Rolling In The Deep,Adele,05/21/2011,"Soul, Pop",2.5B,03:54,105
+11,Sunflower,Post Malone & Swae Lee,01/19/2019,"Hip-Hop, Trap",2.4B,02:42,90
+12,Without Me,Halsey,01/12/2019,Pop,935M,03:57,100
+13,Call Me Maybe,Carly Rae Jepsen,06/23/2012,Pop,1.6B,03:20,120
+14,Blurred Lines,Robin Thicke Featuring T.I. + Pharrell,06/22/2013,"Pop, R&B",912M,04:32,120
+15,Perfect,Ed Sheeran,12/23/2017,Pop,3.8B,04:40,79
+16,Sicko Mode,Travis Scott,12/08/2018,"Hip-Hop, Trap",297M,05:15,78
+17,All About That Bass,Meghan Trainor,09/20/2014,Pop,2.6B,03:10,134
+18,Royals,Lorde,10/12/2013,Indie Pop,962M,03:21,85
+19,God's Plan,Drake,02/03/2018,"Hip-Hop, Rap",1.5B,05:57,77
+20,Moves Like Jagger,Maroon 5 Featuring Christina Aguilera,09/10/2011,Pop,817M,04:39,128
+21,Happy,Pharrell Williams,03/08/2014,"R&B, Soul",1.3B,04:01,160
+22,Just The Way You Are,Bruno Mars,10/02/2010,Pop,1.9B,03:57,109
+23,Rockstar,Post Malone Featuring 21 Savage,10/28/2017,Hip-Hop,1.2B,04:02,80
+24,TiK ToK,Ke$ha,01/02/2010,Electropop,700M,03:36,148
+25,See You Again,Wiz Khalifa Featuring Charlie Puth,04/25/2015,"Hip-Hop, Rap",6.4B,03:58,132
+26,Dark Horse,Katy Perry Featuring Juicy J,02/08/2014,Pop,3.8B,03:45,120
+27,Thrift Shop,Macklemore & Ryan Lewis Featuring Wanz,02/02/2013,Hip-Hop,1.8B,03:53,95
+28,One More Night,Maroon 5,09/29/2012,Pop,1.1B,03:43,90
+29,We Are Young,fun. Featuring Janelle Monae,03/17/2012,Indie Pop,1.1B,04:13,134
+30,That's What I Like,Bruno Mars,05/13/2017,Pop,2.3B,03:31,113
+31,The Hills,The Weeknd,10/03/2015,"R&B, Hip-Hop",2.1B,03:55,63
+32,All Of Me,John Legend,05/17/2014,"Pop, R&B",2.4B,05:08,100
+33,Happier,Marshmello & Bastille,02/16/2019,"EDM, Pop",1.2B,03:54,160
+34,Shake It Off,Taylor Swift,09/06/2014,Pop,3.4B,04:02,103
+35,One Dance,Drake Featuring WizKid & Kyla,05/21/2016,"Afrobeat, Dancehall",29M,03:07,96
+36,Radioactive,Imagine Dragons,07/06/2013,Rock,1.5B,04:22,100
+37,Sexy And I Know It,LMFAO,01/07/2012,Electronic,1B,03:24,124
+38,Someone Like You,Adele,09/17/2011,"Soul, Pop",2.2B,04:45,128
+39,Counting Stars,OneRepublic,01/18/2014,"Pop, Rock",4B,04:44,89
+40,E.T.,Katy Perry Featuring Kanye West,04/09/2011,"Hip-Hop, Trap",700M,05:02,145
+41,Trap Queen,Fetty Wap,05/16/2015,Pop,878M,04:05,135
+42,Love Yourself,Justin Bieber,02/13/2016,Pop,1.7B,04:33,120
+43,Firework,Katy Perry,12/18/2010,"EDM, Dance-Pop",1.4B,03:54,90
+44,Give Me Everything,"Pitbull Featuring Ne-Yo, Afrojack & Nayer",07/09/2011,"Hip-Hop, Rap",1.1B,04:27,108
+45,Locked Out Of Heaven,Bruno Mars,12/22/2012,Pop,1.1B,03:55,79
+46,Love The Way You Lie,Eminem Featuring Rihanna,07/31/2010,Pop,2.8B,04:27,118
+47,Thinking Out Loud,Ed Sheeran,01/31/2015,"Hip-Hop, Rap",3.8B,04:57,144
+48,Sorry,Justin Bieber,01/23/2016,Pop,3.8B,03:26,120
+49,California Gurls,Katy Perry Featuring Snoop Dogg,06/19/2010,R&B,749M,03:54,128
+50,Dynamite,Taio Cruz,08/21/2010,Pop,205M,04:10,140
+51,Lucid Dreams,Juice WRLD,10/06/2018,Pop,1B,03:51,115
+52,Hello,Adele,11/14/2015,Hip-Hop,3.1B,06:07,104
+53,Work,Rihanna Featuring Drake,03/05/2016,Electronic,1.4B,07:35,110
+54,Grenade,Bruno Mars,01/08/2011,Pop,1.2B,03:41,96
+55,"Hey, Soul Sister",Train,04/10/2010,"Hip-Hop, Rap",376M,03:38,109
+56,I Like It,"Cardi B, Bad Bunny & J Balvin",07/07/2018,R&B,1.6B,04:17,150
+57,Wake Me Up!,Avicii,10/05/2013,"Dance, Pop",2.3B,04:33,89
+58,Don't Let Me Down,The Chainsmokers Featuring Daya,07/16/2016,Pop,2.1B,03:38,105
+59,Havana,Camila Cabello Featuring Young Thug,01/27/2018,Pop,2B,03:39,138
+60,OMG,Usher Featuring will.i.am,05/15/2010,"Hip-Hop, Rap",221M,04:42,140
+61,Bad Guy,Billie Eilish,08/24/2019,Pop,1.2B,03:26,102
+62,Fancy,Iggy Azalea Featuring Charli XCX,06/07/2014,EDM,1.1B,03:21,126
+63,Can't Feel My Face,The Weeknd,08/22/2015,Pop,1.4B,03:39,130
+64,Wow.,Post Malone,04/06/2019,"Trap, Hip-Hop",339M,02:38,135
+65,Blank Space,Taylor Swift,11/29/2014,Pop,3.5B,04:33,100
+66,Cheap Thrills,Sia Featuring Sean Paul,08/06/2016,Electropop,1.9B,04:22,92
+67,Some Nights,fun.,09/29/2012,Pop,255M,05:40,97
+68,Need You Now,Lady Antebellum,03/20/2010,Latin Pop,643M,04:32,85
+69,7 Rings,Ariana Grande,02/02/2019,"Hip-Hop, Trap",1.4B,03:05,128
+70,Stay With Me,Sam Smith,08/16/2014,Pop,1.2B,03:30,120
+71,Can't Hold Us,Macklemore & Ryan Lewis Featuring Ray Dalton,05/18/2013,Pop,1B,07:04,88
+72,Better Now,Post Malone,10/06/2018,Hip-Hop,649M,03:53,120
+73,Roar,Katy Perry,09/14/2013,R&B,4B,04:30,140
+74,Rude,MAGIC!,07/26/2014,Pop,2.5B,03:46,115
+75,"Thank U, Next",Ariana Grande,12/31/2019,Pop,823M,03:28,108
+76,Sugar,Maroon 5,03/28/2015,"Pop, Rock",4.1B,05:02,125
+77,Payphone,Maroon 5 Featuring Wiz Khalifa,05/26/2012,"Hip-Hop, Rap",904M,04:40,128
+78,Airplanes,B.o.B Featuring Hayley Williams,06/05/2010,"Pop, R&B",701M,03:12,120
+79,Psycho,Post Malone Featuring Ty Dolla $ign,06/16/2018,Pop,1B,03:57,95
+80,Bodak Yellow,Cardi B,10/07/2017,EDM,1.1B,03:54,128
+81,Watch Me,Silento,07/18/2015,Dancehall,1.9B,03:23,100
+82,Can't Stop The Feeling!,Justin Timberlake,05/28/2016,Latin Pop,1.8B,04:46,110
+83,Cheerleader,OMI,07/25/2015,Trap,1.3B,03:10,132
+84,Bad Romance,Lady Gaga,12/05/2009,Pop,1.8B,05:09,118
+85,Stronger,Kelly Clarkson,02/18/2012,"Pop, Hip-Hop",507M,03:41,125
+86,What Do You Mean?,Justin Bieber,09/19/2015,Electro Pop,2.2B,04:58,104
+87,Nice For What,Drake,04/21/2018,Dance,423M,04:23,116
+88,Sucker,Jonas Brothers,03/16/2019,Pop,390M,03:20,105
+89,Meant To Be,Bebe Rexha & Florida Georgia Line,03/31/2018,Pop,1.1B,02:58,100
+90,Timber,Pitbull Featuring Ke$ha,01/18/2014,Country,1.5B,03:35,120
+91,Take Me To Church,Hozier,12/20/2014,Indie Folk,875M,04:17,140
+92,Hotline Bling,Drake,10/24/2015,Rap,2B,04:56,130
+93,Heathens,Twenty One Pilots,09/24/2016,R&B,2.2B,03:38,128
+94,Super Bass,Nicki Minaj,08/13/2011,Hip-Hop,1B,03:39,75
+95,F**k You! (Forget You),CeeLo Green,03/05/2011,"Pop, Dance",126M,03:54,98
+96,Panda,Desiigner,05/07/2016,Pop,590M,04:03,150
+97,Break Your Heart,Taio Cruz Featuring Ludacris,03/20/2010,"Hip-Hop, Rap",280M,03:12,98
+98,In My Feelings,Drake,07/21/2018,Pop,294M,03:38,88
+99,Wrecking Ball,Miley Cyrus,09/28/2013,R&B,1.3B,03:42,116
+100,Ho Hey,The Lumineers,12/29/2012,Pop,347M,02:42,135
