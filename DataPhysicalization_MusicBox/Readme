@@ -1,0 +1,37 @@
+Data Physicalization Music Box
+
+This project uses a rotary encoder to select a decade (1980s, 1990s, 2000s, 2010s) and plays a random song from that decade using Python and Arduino. The LED intensity represents the popularity of different genres over time.
+
+Project Structure:
+- DataPhysicalization_MusicBox/
+  - ArduinoCodeEncoder/  -> Arduino code for rotary encoder and LED control
+  - CSVFiles_SongData/   -> Song data collected from Billboard, YouTube, and Waterloo studies
+  - DemoVideo/           -> Video demonstration of the project
+  - GetDateFromTables/   -> Pre-run script to extract required data from tables
+  - PlayRandomMusicPython/ -> Python script to play music based on selected decade
+
+How It Works:
+1. The user rotates the rotary encoder, which maps the position to a decade (1980s, 1990s, 2000s, 2010s).
+2. The LED brightness levels represent genre popularity trends for the selected decade.
+3. When the encoder button is pressed, it sends the decade name to Python over serial communication.
+4. The Python script randomly selects and plays a song from the corresponding folder.
+
+Setup Instructions:
+1. Install Python Dependencies:
+   pip install pygame pyserial
+
+2. Upload the Arduino Code:
+   - Connect the rotary encoder to the Arduino (Pins 2, 3, 4).
+   - Connect LEDs to pins 9, 10, 11, and 12.
+   - Upload the ArduinoCodeEncoder.ino file using Arduino IDE.
+
+3. Run the Python Script:
+   python play_random_music.py
+
+Troubleshooting:
+- If the rotary encoder doesn't respond, check wiring and ensure the correct COM port is used in Python.
+- If no music plays, verify the folder paths in the Python script contain MP3 files.
+- You can either create folders with music data using the provided data or use the existing songs folder.
+
+License:
+This project is open-source. Modify and improve as needed.
