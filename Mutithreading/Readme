@@ -1,0 +1,36 @@
+Thread Synchronization in C – Mutexes, Condition Variables, and Semaphores
+
+This project implements thread synchronization in C using mutexes, condition variables, and semaphores to simulate the formation of ethynyl radicals from carbon and hydrogen atoms.
+
+Project Structure:
+- kosmos-mcv.c   -> Implements synchronization using mutexes and condition variables
+- kosmos-sem.c   -> Implements synchronization using semaphores
+
+How It Works:
+1. The program creates threads representing hydrogen and carbon atoms.
+2. Each thread waits until enough atoms are available to form a radical.
+3. Mutexes and condition variables (kosmos-mcv.c) or semaphores (kosmos-sem.c) ensure that no race conditions or deadlocks occur.
+4. The system logs every successful radical formation and terminates when all possible radicals have been created.
+
+Setup Instructions:
+1. Compile the code:
+   gcc -o kosmos-mcv kosmos-mcv.c -lpthread
+   gcc -o kosmos-sem kosmos-sem.c -lpthread
+2. Run the program with a seed value:
+   ./kosmos-mcv <seed> [num_atoms]
+   ./kosmos-sem <seed> [num_atoms]
+   Example: ./kosmos-mcv 42 40
+3. The program will generate logs of radical formations and exit after processing all atoms.
+
+Key Features:
+- Uses condition variables and semaphores to handle thread synchronization.
+- Implements a queue-based structure to manage waiting atoms.
+- Ensures deadlock-free execution with proper locking mechanisms.
+
+Troubleshooting:
+- If threads are not forming radicals, ensure that the correct number of atoms is provided as input.
+- If the program exits too quickly, increase the maximum execution time in wait_to_terminate().
+- Run with different seed values to test different scenarios.
+
+License:
+This project is open-source and can be modified or extended as needed.
